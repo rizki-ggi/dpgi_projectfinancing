@@ -5,9 +5,10 @@ import streamlit_authenticator as stauth
 # Setup user authentication
 passwords = ["ggi2025"]
 
+# Create a hashed passwords list
 hashed_passwords = stauth.Hasher(passwords).generate()
 
-# Create a dummy username and name to fit the required parameters
+# Create dummy names and usernames to fit required parameters
 authenticator = stauth.Authenticate(["user"], ["username"], hashed_passwords, "some_cookie_name", "some_signature_key", cookie_expiry_days=1)
 
 # Simplify login by not showing username field
