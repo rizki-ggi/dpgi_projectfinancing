@@ -11,7 +11,7 @@ def check_password():
             submit_button = st.form_submit_button(label="Submit")
 
             if submit_button:
-                if st.session_state["password"] == "your_password":
+                if st.session_state["password"] == "ggi2025":
                     st.session_state["password_correct"] = True
                     st.experimental_rerun()  # Rerun to update session state
                 else:
