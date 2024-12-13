@@ -8,7 +8,7 @@ if not check_password():
 
 # Display the dashboard
 st.subheader("Dashboard from Looker Studio")
-looker_studio_url = "your_looker_embeded_URL"
+looker_studio_url = "https://lookerstudio.google.com/embed/reporting/7b165fb5-3c3e-4429-b162-a4dbe6438e28/page/xFVvD"
 components.iframe(looker_studio_url, width=2000, height=2000)
 
 # Add Sign Out button below the dashboard
