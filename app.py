@@ -12,6 +12,7 @@ looker_studio_url = "your_looker_embeded_URL"
 components.iframe(looker_studio_url, width=800, height=600)
 
 # Add Sign Out button below the dashboard
+st.write("")  # Add a spacer
 if st.button("Sign Out"):
     sign_out()
     st.experimental_rerun()
