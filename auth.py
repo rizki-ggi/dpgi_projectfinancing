@@ -22,9 +22,3 @@ def check_password():
 # Function to sign out
 def sign_out():
     st.session_state["password_correct"] = False
-
-    return st.session_state["password_correct"]
-
-# Function to sign out
-def sign_out():
-    st.session_state["password_correct"] = False
