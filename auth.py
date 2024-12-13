@@ -13,9 +13,15 @@ def check_password():
             if submit_button:
                 if st.session_state["password"] == "ggi2025":
                     st.session_state["password_correct"] = True
-                    del st.session_state["password"]  # Remove password from session state
+                    st.experimental_rerun()  # Rerun to update session state
                 else:
                     st.error("Incorrect password.")
+
+    return st.session_state["password_correct"]
+
+# Function to sign out
+def sign_out():
+    st.session_state["password_correct"] = False
 
     return st.session_state["password_correct"]
 
